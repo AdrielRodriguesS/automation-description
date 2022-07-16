@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <TabPane prefHeight="445.0" prefWidth="548.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Main">
+               <content>
+                  <VBox maxHeight="440.0" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="PROJECT NAME">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtProjectName" maxHeight="20.0" maxWidth="510.0" prefHeight="0.0" prefWidth="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <HBox prefHeight="70.0" prefWidth="200.0">
+                           <children>
+                              <VBox maxHeight="60.0" maxWidth="270.0" prefHeight="60.0" prefWidth="270.0">
+                                 <children>
+                                    <Label text="CLIENT">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="16.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtClient" maxHeight="20.0" maxWidth="250.0" prefHeight="0.0" prefWidth="0.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox maxHeight="60.0" maxWidth="270.0" prefHeight="60.0" prefWidth="270.0">
+                                 <children>
+                                    <HBox maxHeight="60.0" maxWidth="249.0" prefHeight="24.0" prefWidth="249.0">
+                                       <children>
+                                          <Label text="SERIAL NUMBER">
+                                             <font>
+                                                <Font name="Berlin Sans FB" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="txtserialWarning" prefHeight="19.0" prefWidth="118.0" textFill="RED">
+                                             <font>
+                                                <Font name="Berlin Sans FB" size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="5.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <TextField fx:id="txtSerialNumber" maxHeight="20.0" maxWidth="250.0" prefHeight="0.0" prefWidth="0.0">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="84.0" prefHeight="70.0" prefWidth="200.0">
+                           <children>
+                              <VBox maxHeight="60.0" maxWidth="270.0" prefHeight="60.0" prefWidth="270.0">
+                                 <children>
+                                    <Label text="SUPPLY ( V )">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="16.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtSupply" maxHeight="20.0" maxWidth="250.0" prefHeight="0.0" prefWidth="0.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox maxHeight="60.0" maxWidth="270.0" prefHeight="50.0" prefWidth="270.0">
+                                 <children>
+                                    <Label text="POWER ( kW )">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="16.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtPower" maxHeight="20.0" maxWidth="250.0" prefHeight="0.0" prefWidth="0.0">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label layoutX="30.0" layoutY="30.0" text="MAIN DESCRIPTION">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="txtMainDescription" maxHeight="100.0" maxWidth="510.0" prefHeight="100.0" prefWidth="50.0">
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label fx:id="txtprojectWarnig" textFill="RED">
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="create" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtCreateAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="CREATE" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="load" layoutX="30.0" layoutY="30.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtLoadAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #b22222;" text="LOAD" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="update" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtUpdateAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="UPDATE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="delete" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtDeleteAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #b22222;" text="DELETE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="close" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#OnBtCloseAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="CLOSE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="3.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Pneumatic">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="tableViewPneumatic" prefHeight="366.0" prefWidth="548.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnPneumaticId" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="tableColumnPneumaticTag" prefWidth="75.0" text="TAG" />
+                              <TableColumn fx:id="tableColumnPneumaticType" prefWidth="75.0" text="TYPE" />
+                              <TableColumn fx:id="tableColumnPneumaticDescription" prefWidth="240.00003051757812" text="DESCRIPTION" />
+                              <TableColumn fx:id="tableColumnPneumaticSensor" prefWidth="78.4000244140625" text="SENSOR" />
+                          </columns>
+                        </TableView>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btNewPneumatic" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtNewPneumaticAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="NEW" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btEditPneumatic" layoutX="30.0" layoutY="30.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtEditPneumaticAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="EDIT" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btDeletePneumatic" layoutX="140.0" layoutY="15.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtDeletePneumaticAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #b22222;" text="DELETE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab text="Motors">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="tableViewMotor" prefHeight="366.0" prefWidth="548.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnMotorId" prefWidth="75.0" text="ID" />
+                              <TableColumn fx:id="tableColumnMotorTag" prefWidth="75.0" text="TAG" />
+                              <TableColumn fx:id="tableColumnMotorType" prefWidth="75.0" text="TYPE" />
+                              <TableColumn fx:id="tableColumnMotorDescription" prefWidth="317.6000671386719" text="DESCRIPTION" />
+                           </columns>
+                        </TableView>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btNewMotor" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtNewMotorAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="NEW" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btEditMotor" layoutX="30.0" layoutY="30.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtEditMotorAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="EDIT" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="btDeleteMotor" layoutX="140.0" layoutY="15.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtDeleteMotorAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #b22222;" text="DELETE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </content>
+</ScrollPane>
