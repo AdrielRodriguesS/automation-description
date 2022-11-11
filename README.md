@@ -10,7 +10,7 @@ As informações ficam disponíveis para documentação e controle dos itens de 
 Mesmo sendo com fins estudantis, surgiu da experiência de um problema real.
 
 ## Layout da aba das especificações do Projeto
-![Aba Principal](https://github.com/AdrielRodriguesS/automation-description/blob/main/assets/Main_tab.png)
+![Aba Principal](https://github.com/AdrielRodriguesS/automation-description/blob/main/assets/Main_Tab.png)
 
 ## Layout aba dos Acionamentos Pneumáticos
 ![Aba Acionamentos Pneumaticos](https://github.com/AdrielRodriguesS/automation-description/blob/main/assets/Pneumatic_tab.png)
