@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="431.0" maxWidth="550.0" prefHeight="431.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MotorFormController">
+   <children>
+      <VBox prefHeight="425.0" prefWidth="550.0">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <VBox maxHeight="60.0" maxWidth="180.0" prefHeight="60.0" prefWidth="180.0">
+                     <children>
+                        <Label text="TAG">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="txtTAG" maxHeight="20.0" maxWidth="150.0" prefHeight="0.0" prefWidth="0.0">
+                           <VBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox maxHeight="60.0" maxWidth="160.0" prefHeight="50.0" prefWidth="180.0">
+                     <children>
+                        <Label text="TYPE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboBoxMotor" prefWidth="150.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox layoutX="200.0" layoutY="15.0" maxHeight="60.0" maxWidth="180.0" prefHeight="50.0" prefWidth="180.0">
+                     <children>
+                        <HBox prefHeight="22.0" prefWidth="180.0">
+                           <children>
+                              <Label text="ID">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="lblIdWarning" textFill="RED">
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TextField fx:id="txtID" maxHeight="20.0" maxWidth="150.0" prefHeight="0.0" prefWidth="0.0">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label text="DESCRIPTION">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtDescription" maxHeight="20.0" maxWidth="510.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="OPERATION RESTRICTION">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtOperationRestriction" maxHeight="20.0" maxWidth="510.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="HMI DESCRIPTION ALERT / ALARM">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtHMIDescription" maxHeight="20.0" maxWidth="510.0" prefHeight="0.0" prefWidth="0.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="MOVEMENT DESCRIPTION">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="txtMovementDescription" maxHeight="80.0" maxWidth="510.0" prefHeight="100.0" prefWidth="50.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label fx:id="lblMotorWarning" textFill="RED">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btSave" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtSaveAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #2f4f4f;" text="SAVE" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btDiscard" layoutX="140.0" layoutY="15.0" maxHeight="30.0" maxWidth="90.0" mnemonicParsing="false" onAction="#onBtDiscardAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #b22222;" text="DISCARD" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
