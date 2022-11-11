@@ -50,8 +50,10 @@ git clone https://github.com/AdrielRodriguesS/automation-description
 - Rodar o arquivo Script_automation-description.sql para popular o banco de dados
 
 ## Configurações do Eclipse
-- importar os ".jars" da pasta "libs" para as libraries do projeto;
-- Incluir em VM arguments (em Run Configurations / Java Application): --module-path "seu local\libs\javafx-sdk-18.0.2\lib" --add-modules=javafx.fxml,javafx.controls
+- importar os ".jars" conforme abaixo:
+  - JavafxSDK (https://gluonhq.com/products/javafx/);
+  - MySQLConnector (versão 8.0.30);
+- Incluir em VM arguments (Run Configurations / Java Application): --module-path "seu local\libs\javafx-sdk-18.0.2\lib" --add-modules=javafx.fxml,javafx.controls
 
 ## Recuperar um Item do Banco
 - Rodar a classe main como java application
